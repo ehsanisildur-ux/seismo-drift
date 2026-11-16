@@ -24,3 +24,5 @@ node --test tests/rpc-preflight.test.cjs
 ```
 
 The hosted proof separately fetches the July 3–5, 2019 USGS catalog data for a box around Ridgecrest. It verifies each onchain event and independently calculates scores as maximum suffix sums. Direct tests also exercise clearing, the cap, the settlement lag, and inconsistent or unavailable evidence. Fixtures preserve the public catalog responses used by the direct tests. Generic CLI receipt transport is reused under MIT.
+
+[StudioNet proofs](proofs/README.md) · [Submission text](SUBMISSION.md).

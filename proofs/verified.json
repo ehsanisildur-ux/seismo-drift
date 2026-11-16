@@ -1,0 +1,283 @@
+{
+  "contract": "0xD9A1346E5c151126773E89f6e77BAB8f0C31fF9B",
+  "deployment": "0x11b230c79aac3d33bbaf04e3bb84f6cc2bd71bb50f96a6a8d88a489f595de959",
+  "revision": "090f8653b624ff7c8bd7cf848d5221e8112412f3",
+  "source_sha256": "213ea89c6d5fb94082130d75c45cf87b8a8e7f79c53ccc483983b9e4596761f0",
+  "trace": [
+    {
+      "label": "deploy",
+      "hash": "0x11b230c79aac3d33bbaf04e3bb84f6cc2bd71bb50f96a6a8d88a489f595de959",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 4,
+      "disagree": 0,
+      "idle": 1,
+      "signer": "0x0db1e2c7da9306fe6cca8b98f233d2cec17805c2",
+      "args": {
+        "args": [
+          "sd1:{\"start\":\"2019-07-03\",\"west\":-119,\"east\":-116,\"south\":34,\"north\":37,\"allowance\":2,\"trigger\":2,\"clear\":0}"
+        ]
+      },
+      "error": null,
+      "state": {
+        "active": false,
+        "config": {
+          "allowance": 2,
+          "clear": 0,
+          "east": -116,
+          "north": 37,
+          "south": 34,
+          "start": "2019-07-03",
+          "trigger": 2,
+          "west": -119
+        },
+        "next_day": "2019-07-03",
+        "score": 0
+      }
+    },
+    {
+      "label": "reject-skip",
+      "hash": "0xb380693f068a92dd3ae95d54885a31bf9544db3e77e47ee3290cd24e43fe0dd2",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "signer": "0x910ec4e7f077dfbbba521b03e8f32390ce39ddc8",
+      "args": {
+        "method": "advance",
+        "args": [
+          "2019-07-04"
+        ]
+      },
+      "error": "Expected the next unsealed day",
+      "state": {
+        "active": false,
+        "config": {
+          "allowance": 2,
+          "clear": 0,
+          "east": -116,
+          "north": 37,
+          "south": 34,
+          "start": "2019-07-03",
+          "trigger": 2,
+          "west": -119
+        },
+        "next_day": "2019-07-03",
+        "score": 0
+      }
+    },
+    {
+      "label": "quiet",
+      "hash": "0xf1032b9875adc45643b4eced446b8be76eeb312b9129056616755997f6232a4c",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "signer": "0x910ec4e7f077dfbbba521b03e8f32390ce39ddc8",
+      "args": {
+        "method": "advance",
+        "args": [
+          "2019-07-03"
+        ]
+      },
+      "error": null,
+      "state": {
+        "active": false,
+        "config": {
+          "allowance": 2,
+          "clear": 0,
+          "east": -116,
+          "north": 37,
+          "south": 34,
+          "start": "2019-07-03",
+          "trigger": 2,
+          "west": -119
+        },
+        "next_day": "2019-07-04",
+        "score": 0
+      }
+    },
+    {
+      "label": "open",
+      "hash": "0xdd7c49960b1f3004cd98c9ba99b0ac67a5cdc029ba82816c885bd8a8fc96d876",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "signer": "0x0db1e2c7da9306fe6cca8b98f233d2cec17805c2",
+      "args": {
+        "method": "advance",
+        "args": [
+          "2019-07-04"
+        ]
+      },
+      "error": null,
+      "state": {
+        "active": true,
+        "config": {
+          "allowance": 2,
+          "clear": 0,
+          "east": -116,
+          "north": 37,
+          "south": 34,
+          "start": "2019-07-03",
+          "trigger": 2,
+          "west": -119
+        },
+        "next_day": "2019-07-05",
+        "score": 2
+      }
+    },
+    {
+      "label": "hold",
+      "hash": "0xbae279f0e68c5784d7148cb89ee627bf9f11935c798f9b21946a1480855d1d13",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "signer": "0x910ec4e7f077dfbbba521b03e8f32390ce39ddc8",
+      "args": {
+        "method": "advance",
+        "args": [
+          "2019-07-05"
+        ]
+      },
+      "error": null,
+      "state": {
+        "active": true,
+        "config": {
+          "allowance": 2,
+          "clear": 0,
+          "east": -116,
+          "north": 37,
+          "south": 34,
+          "start": "2019-07-03",
+          "trigger": 2,
+          "west": -119
+        },
+        "next_day": "2019-07-06",
+        "score": 1
+      }
+    },
+    {
+      "label": "reject-replay",
+      "hash": "0x5fd5f90b68bb98ff622e347b7d4ba46f572c7cb0b3536585ed5b72c806b0db21",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "signer": "0x0db1e2c7da9306fe6cca8b98f233d2cec17805c2",
+      "args": {
+        "method": "advance",
+        "args": [
+          "2019-07-04"
+        ]
+      },
+      "error": "Expected the next unsealed day",
+      "state": {
+        "active": true,
+        "config": {
+          "allowance": 2,
+          "clear": 0,
+          "east": -116,
+          "north": 37,
+          "south": 34,
+          "start": "2019-07-03",
+          "trigger": 2,
+          "west": -119
+        },
+        "next_day": "2019-07-06",
+        "score": 1
+      }
+    }
+  ],
+  "days": {
+    "2019-07-03": {
+      "day": "2019-07-03",
+      "source": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2019-07-03&endtime=2019-07-04&minlatitude=34&maxlatitude=37&minlongitude=-119&maxlongitude=-116&minmagnitude=4.5&limit=65&orderby=time-asc&eventtype=earthquake",
+      "events": [],
+      "observation_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "count": 0,
+      "at_cap": false,
+      "score_before": 0,
+      "score": 0,
+      "active_before": false,
+      "active": false,
+      "transition": "HOLD"
+    },
+    "2019-07-04": {
+      "day": "2019-07-04",
+      "source": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2019-07-04&endtime=2019-07-05&minlatitude=34&maxlatitude=37&minlongitude=-119&maxlongitude=-116&minmagnitude=4.5&limit=65&orderby=time-asc&eventtype=earthquake",
+      "events": [
+        {
+          "id": "ci38443183",
+          "latitude_e7": 357053333,
+          "longitude_e7": -1175038333,
+          "magnitude_e7": 64000000,
+          "time_ms": 1562261629000
+        },
+        {
+          "id": "ci38443607",
+          "latitude_e7": 356013333,
+          "longitude_e7": -1175970000,
+          "magnitude_e7": 45900000,
+          "time_ms": 1562265584440
+        },
+        {
+          "id": "ci38443719",
+          "latitude_e7": 357160000,
+          "longitude_e7": -1175600000,
+          "magnitude_e7": 45800000,
+          "time_ms": 1562266566420
+        },
+        {
+          "id": "ci38443871",
+          "latitude_e7": 356715000,
+          "longitude_e7": -1174788333,
+          "magnitude_e7": 45000000,
+          "time_ms": 1562268092090
+        }
+      ],
+      "observation_sha256": "48ba3b8b638c581481c7009d61d566d3d76e5945cc6f00bfd7c9865fc2a1a69f",
+      "count": 4,
+      "at_cap": false,
+      "score_before": 0,
+      "score": 2,
+      "active_before": false,
+      "active": true,
+      "transition": "OPEN"
+    },
+    "2019-07-05": {
+      "day": "2019-07-05",
+      "source": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2019-07-05&endtime=2019-07-06&minlatitude=34&maxlatitude=37&minlongitude=-119&maxlongitude=-116&minmagnitude=4.5&limit=65&orderby=time-asc&eventtype=earthquake",
+      "events": [
+        {
+          "id": "ci38450263",
+          "latitude_e7": 357603333,
+          "longitude_e7": -1175750000,
+          "magnitude_e7": 53700000,
+          "time_ms": 1562324873040
+        }
+      ],
+      "observation_sha256": "0c284d0496d2d6c6c8279a9b6dce8ffd61c9123ce6740975ef34b728c5f241e1",
+      "count": 1,
+      "at_cap": false,
+      "score_before": 2,
+      "score": 1,
+      "active_before": true,
+      "active": true,
+      "transition": "HOLD"
+    }
+  }
+}
